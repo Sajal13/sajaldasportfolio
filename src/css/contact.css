@@ -16,7 +16,7 @@
     row-gap: 2rem;
 }
 .contactForm{
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
 }
 .contactForm textarea{
@@ -44,4 +44,9 @@
     font-size: var(--normal-font-size);
     cursor: pointer;
     margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+    .contactForm{
+        width: 400px;
+    }
 }
