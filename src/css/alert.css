@@ -1,0 +1,45 @@
+.alert{
+    position: fixed;
+    z-index: 1;
+    right: 10%;
+    top: 15%;
+    height: 30px;
+    background: lightskyblue;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-left: 2px solid #2ecc71;
+    border-right: 2px solid #2ecc71;
+}
+.alertIcon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2ecc71;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 100%;
+}
+.alert .moveIn{
+    animation: moveIn 1s;
+    transform: translateX(80px);
+}
+@keyframes moveIn {
+    0%{
+        transform: translateX(120px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.alertText{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+}

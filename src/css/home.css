@@ -1,0 +1,200 @@
+.home{
+    height: calc(100vh-3rem);
+    row-gap: 1rem;
+    visibility: hidden;
+}
+
+.homeData{
+    align-self: center;
+}
+.homeTitle{
+    font-size: (--big-font-size);
+    margin-bottom: var(--mb-5);
+}
+.homeTitle span{
+    color: var(--first-color);
+    font-size: 3rem;
+}
+.Herosocial{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.Herosocial a{
+    width: max-content;
+    margin-bottom: var(--mb-2);
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+.Herosocial a:hover{
+    color: var(--first-color);
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.button{
+    display: inline-block;
+    color: #fff;
+    background: var(--second-color);
+    padding: .75rem 2rem;
+    font-weight: var(--font-semi);
+    border-radius: 2rem;
+    font-size: 1rem;
+    filter: drop-shadow(0px 5px 10px grey);
+    margin-bottom: 5px;
+}
+.button:hover{
+    transform: scaleX(1.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.heroImg{
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    width: 300px;
+}
+.model{
+    width: 100%;
+}
+
+
+.htmlIcon{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 0;
+    left: 10%;
+    z-index: 100;
+    animation: htmlAnimation 3s ease-in-out infinite;
+    animation-delay: 3s;
+}
+@keyframes htmlAnimation {
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: -10%;
+    }
+    100%{
+        top: 0%;
+    }
+}
+.cssIcon{
+    position: absolute;
+    font-size: 2.5rem;
+    top: -15%;
+    left: 25%;
+    z-index: 100;
+    animation: cssAnimation 3s ease-in-out infinite;
+    animation-delay: 3s;
+}
+@keyframes cssAnimation {
+    0%{
+        top: -15%;
+        
+    }
+    50%{
+        top: -25%;
+    }
+    100%{
+        top: -15%;
+    }
+}
+.jsIcon{
+    position: absolute;
+    font-size: 2.5rem;
+    top: -25%;
+    left: 45%;
+    z-index: 100;
+    animation: jsAnimation 3s ease-in-out infinite;
+    animation-delay: 3s;
+}
+@keyframes jsAnimation {
+    0%{
+        top: -25%;
+    }
+    50%{
+        top: -35%;
+    }
+    100%{
+        top: -25%;
+    }
+}
+.reactIcon{
+    position: absolute;
+    font-size: 2.5rem;
+    top: -15%;
+    right: 25%;
+    z-index: 100;
+    animation: reactAnimation 3s ease-in-out infinite;
+    animation-delay: 3s;
+}
+@keyframes reactAnimation {
+    0%{
+        top: -15%;
+    }
+    50%{
+        top: -25%;
+    }
+    100%{
+        top: -15%;
+    }
+}
+.linuxIcon{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 2%;
+    right: 10%;
+    z-index: 100;
+    animation: linuxAnimation 3s ease-in-out infinite;
+    animation-delay: 3s;
+}
+@keyframes linuxAnimation {
+    0%{
+        top: 2%;
+    }
+    50%{
+        top: -12%;
+    }
+    100%{
+        top: 2%;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .home{
+        height: 100vh;
+    }
+    .homeData{
+        align-self: flex-end;
+    }
+    .Herosocial{
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+    .Herosocial a{
+        margin-bottom: 0;
+        margin-right: var(--mb-4);
+    }
+    .heroImg{
+        width: 457px;
+        bottom: 0;
+    }
+    .model{
+        width: 400px;
+        /* left: 0; */
+
+    }
+    
+}
+
+@media screen and (min-width: 1080px) {
+    .home{
+        right: 5%;
+    }
+}

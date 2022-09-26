@@ -1,0 +1,51 @@
+.project_circleOne{
+    width: 250px;
+    height: 250px;
+    background: var(--circle-one);
+    bottom: 0;
+    right: 0;
+}
+.project_circleTwo{
+    width: 200px;
+    height: 200px;
+    background: var(--circle-two);
+    top: 0;
+    left: 0;
+}
+
+.projectContainer{
+    row-gap: 2rem;
+}
+.projectImage{
+    box-shadow: 0 4px 15px rgba(14, 36, 49, 0.14);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.projectImage img{
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+
+.projectImage img:hover{
+    transform: scale(1.1);
+}
+.projectImage p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.projectImage .button{
+    position: relative;
+    left: 40%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .projectContainer{
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(2,1fr) !important;
+        column-gap: 2rem;
+    }
+}
