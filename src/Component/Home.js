@@ -76,8 +76,8 @@ function Home() {
 
             <div className='homeData'>
                 <h1 className='homeTitle' ref={homeTitle}>
-                    Hi, I am <br/> <span>Sajal Das.</span><br />
-                    A<br/>Web<br/>Developer
+                    Hi, I am <br/> <span>Sajal Das.</span><br /><br />
+                    A Web Developer
                 </h1>
                 <a href='#contact' className='button' ref={buttonRef}>
                     Contact Me
