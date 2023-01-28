@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MyPDF from "../assets/Sajal_Das_cv.pdf"
+import MyPDF from "../assets/Sajal_das_mern_stack.pdf"
 import AboutPhoto from "../img/about.jpg"
 import "../css/about.css"
 
@@ -30,7 +30,7 @@ function About() {
                             Besides, if you want to know more about me, here is my CV.
                             You can download it by clicking the button.
                         </p>
-                        <a href={MyPDF} className='button' download = {"Sajal_Das_cv.pdf"}>Download CV</a>
+                        <a href={MyPDF} className='button' download = {"Sajal_das_mern_stack.pdf"}>Download CV</a>
                     </div>
                 </div>
             </div>
